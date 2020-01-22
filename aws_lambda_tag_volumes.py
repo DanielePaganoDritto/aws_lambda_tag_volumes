@@ -7,6 +7,9 @@ import boto3
 ec2 = boto3.resource('ec2')
 ec2client = boto3.client('ec2')
 
+# Create an SNS client 
+sns = boto3.client('sns')
+
  
 #-----Define Lambda function-----#
 def lambda_handler(event, context):
