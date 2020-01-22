@@ -3,6 +3,7 @@
 Python Lambda Function than scans all the existing EBS volumes inside an AWS account tagging those than don't have a Name Tag with the name of the instance their attached to.
 
 
+
 ## SNS Notifications
 After every function run the template send an email to an SNS Topic containing a confirmation message for the execution.
 

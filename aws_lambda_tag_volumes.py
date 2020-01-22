@@ -24,16 +24,13 @@ def lambda_handler(event, context):
                 if tag['Key'] == 'Name':
                     print ( instance['InstanceId'],tag['Value'])
                     dict[instance['InstanceId']]= tag['Value']
-                    
-     #-----Store Key & Value with attached instance ID of all volumes ------#     
-     
+         
     #List all the existing volumes
     volumes = ec2.volumes.all()
     
     #Scan the list of volumes
     for volume in volumes:
         
-        #Scan all the volumes that are attached to an instance
         for a in volume.attachments:
                 for key, value in dict.items():
                     if a['InstanceId'] == key:
