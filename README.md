@@ -2,7 +2,7 @@
 
 Python Lambda Function than scans all the existing EBS volumes inside an AWS account tagging those than don't have a Name Tag with the name of the instance their attached to.
 
-
+This is modified version of the script available at https://blog.kloud.com.au/2019/07/30/tag-ebs-volumes-with-ec2-instance-name/
 
 ## SNS Notifications
 After every function run the template send an email to an SNS Topic containing a confirmation message for the execution.
