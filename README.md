@@ -21,11 +21,11 @@ To run the Lambda function you need to create/use an IAM Role with the following
 **Role Name:** AWSLambdaVolumesTaggingRole
 
 **Role Policies:**
-**Policy 1 Name:** Ec2-VolumestaggingPolicy
-    -  "ec2:Describe*"
-    -  "ec2:CreateTags"
+**Policy 1 Name:** Ec2-VolumestaggingPolicy<br />
+    -  "ec2:Describe*"<br />
+    -  "ec2:CreateTags"<br />
 
-**Policy 2 Name:** SNS-VolumesTaggingPolicy
-    - "sns:Publish*"
+**Policy 2 Name:** SNS-VolumesTaggingPolicy<br />
+    - "sns:Publish*"<br />
 
 ** N.B The example ARN above refers to the Topic ARN to use for sending the SNS notification. Change it accordingly when creating the Lambda function on any different account. **
